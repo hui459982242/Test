@@ -241,7 +241,7 @@ public class DateUtil {
     }
 
     /**
-     * 用SimpleDateFormat计算时间差
+     * 用SimpleDateFormat计算分钟差
      * @param date1
      * @param date2
      * @return 两个时间之间的分钟差
@@ -618,18 +618,6 @@ public class DateUtil {
         calendar.set(Calendar.MILLISECOND, 0);
 
         return getSqlDate(calendar.getTime());
-    }
-
-    /**
-     * 获得某年某月最后一天的日期
-     *
-     */
-    public static Date getLastDayOfMonth(int year, int month) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.YEAR, year);
-        calendar.set(Calendar.MONTH, month);
-        calendar.set(Calendar.DATE, 1);
-        return getPreviousDate(getSqlDate(calendar.getTime()));
     }
 
     /**
