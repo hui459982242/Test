@@ -1,6 +1,6 @@
 Java 工具类--时间工具类
 =============================
-时间工具类（Date）
+时间工具类（DateUtil）
 -----------------------------
    ```
     .
@@ -50,3 +50,11 @@ Java 工具类--时间工具类
          ├── getAgeByBirthday(Date birthday)  根据用户生日计算年龄
          └── getSqlDate(java.util.Date date)  由java.util.Date到java.sql.Date的类型转换
     
+订单工具类（OrderUtil）
+-----------------------------
+```
+    .
+    ├── OrderUtil  
+         ├── getLogicOrderNum() 根据系统毫秒数+随机数生成订单号
+         ├── getRandomNum() 根据传入位数生成多少位的随机数
+         └── getBusinessOrderNumber()  根据月数相差，从2018-01开始计算101，之后每月递加1
